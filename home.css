@@ -1,0 +1,21 @@
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    top: 155px;
+    font-size: 50px;
+}
+button {
+    position: relative;
+    top: 230px;
+    left:607px;
+    height: 37px;
+    width: 76px;
+    border: 2px solid black;
+    font-weight: bold;
+
+}

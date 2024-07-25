@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    overflow: hidden;
+}
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#details {
+    position: relative;
+    left: 66px;
+    top: 44px;
+}
+#one{
+    position: relative;
+    left: 520px;
+    top: 50px;
+    
+}
+h1 {
+    position: relative;
+}
+p{
+    position: relative;
+    left: 200px;
+    top: 100px;
+    font-size: 40px;
+}

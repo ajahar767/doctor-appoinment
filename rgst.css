@@ -1,0 +1,31 @@
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+form {
+    position: relative;
+    text-align: center;
+    top: 144px;
+    line-height: 42px;
+}
+#age {
+    position: relative;
+    left: 4px;
+}
+.gen {
+    position: relative;
+    right: 62px;
+}
+#dpw {
+    position: relative;
+    right: 90px;
+}
+#doctors {
+    position: relative;
+    right: 86px;
+}
+button {
+    position: relative;
+    
+}
