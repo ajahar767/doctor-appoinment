@@ -1,48 +1,50 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="rgst.css">
 </head>
 <title>welcome02</title>
+
 <body>
     <div id="main">
-    <img src="https://wallpapers.com/images/hd/medical-dna-symbol-in-green-1q6bhwwfut5e1ecj.jpg">
-    <div id="container" style="margin: 30px;">
-        <form>
-            <label for="name" class="required">Name: </label>
-            <input type="text" style="font-size: 20px;" id="name" required onkeydown="return /[a-zA-Z]/.test(event.key)">
-        </br>
-            <label class="required">Age: </label>
-            <input type="number" style="font-size: 20px;" id="age" required/>
-    </br>
-    <div class="gen">   
-        <label class="required">Gender:</label>
-        <label for="m" id="g">Male</label>
-        <input type="checkbox" id="m"  value="Male" required/>
-        <label for="f">Female</label>
-        <input type="checkbox" id="f" value="Female" required/>
+        <img src="https://wallpapers.com/images/hd/medical-dna-symbol-in-green-1q6bhwwfut5e1ecj.jpg" class="mainImage">
+        <div id="container" style="margin: 30px;">
+            <form>
+                <label for="name" class="required">FirstName: </label>
+                <input type="text" style="font-size: 20px;" id="firstName" required
+                    onkeydown="return /[a-zA-Z]/.test(event.key)">
+                    <label for="name" class="required">LastName: </label>
+                    <input type="text" style="font-size: 20px;" id="lastName" required
+                        onkeydown="return /[a-zA-Z]/.test(event.key)">
+                </br>
+                <label class="required">Age: </label>
+                <input type="number" style="font-size: 20px;" id="age" required />
+                </br>
+                <div class="gen">
+                    <label class="required">Gender:</label>
+                    <label for="m" id="g">Male</label>
+                    <input type="checkbox" id="m" value="Male" required />
+                    <label for="f">Female</label>
+                    <input type="checkbox" id="f" value="Female" required />
+                </div>
+                <label for="doctors" id="dpw">Select speciality:</label>
+                <select name="doctors" id="doctors" onchange="getDoctorsDetails(this)">
+                    <option value="neurologist">Neurologist</option>
+                    <option value="oncologist">Oncologist</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="dermatologist">Dermatologist</option>
+                    <option value="gastroenterologis">Gastroenterologis</option>
+                    value="Psychiatrists">Psychiatrists</option>
+                    <option value="endocrinologist">Endocrinologist</option>
+                    <option value="physicians">General Physicians</option>
+                </select>
+                <div id="doctorList" style="width: 700px; height: 300px; display: flex; justify-content: space-evenly;">
+                </div>
+                </br>
+                <button type="submit" onclick="onSubmit()"> Submit</button>
+            </form>
         </div>
-        <label for="doctors" id="dpw">Select speciality:</label>
-        <select name="doctors" id="doctors">
-        <option
-        value="neurologist">neurologist</option>
-        <option
-        value="Oncologist">Oncologist</option>
-        <option
-        value="Cardiologist">Cardiologist</option>
-        <option
-        value="dermatologist">dermatologist</option>
-        <option
-        value="gastroenterologis">gastroenterologis</option>
-        value="Psychiatrists">Psychiatrists</option>
-        <option
-        value="endocrinologist">endocrinologist</option>
-        <option
-        value="physicians">physicians</option>
- </select>
-</br>
-            <button type="submit" onclick="onSubmit()"> Submit</button>
-        </form>
-    </div>
-<script src="./rgst.js"></script>
+        <script src="./rgst.js"></script>
 </body>
+
 </html>
